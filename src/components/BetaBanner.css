@@ -1,0 +1,20 @@
+.BetaBanner {
+    /*background-color: var(--okayucdn-blue);*/
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    justify-content: center;
+    background: repeating-linear-gradient(
+            75deg,                 /* angle of the stripes */
+            var(--okayucdn-blue),               /* first color (yellow) */
+            var(--okayucdn-blue) 1rem,          /* stripe thickness */
+            var(--okayucdn-blue-hover) 1rem,             /* second color (black) */
+            var(--okayucdn-blue-hover) 2rem              /* total repeat length */
+    );
+}
+.BetaBanner p {
+    margin: 2px;
+}

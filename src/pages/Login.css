@@ -1,0 +1,58 @@
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    color: var(--active-primary-hover);
+    font-size: 1.5rem;
+    margin: 1rem 30%;
+}
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid var(--active-primary-hover);
+    margin: 1rem;
+}
+.separator:not(:empty)::after {
+    margin-left: .25em;
+}
+
+.login-signup {
+    background-color: var(--okayucdn-green);
+    border-radius: 1rem;
+    width: 15rem;
+    border: none;
+    transition: background-color .25s ease;
+}
+.login-signup:hover {
+    background-color: var(--okayucdn-green-hover);
+}
+
+.LoginPanel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.LoginPanel input {
+    width: 30%;
+    padding: .5rem;
+    border-radius: 1rem;
+    border: none;
+    margin: .5rem;
+    background-color: rgba(28, 36, 38, 0.7);
+    backdrop-filter: blur(1rem);
+    text-align: center;
+    font-family: GenJyuuGothic, sans-serif;
+    font-size: 1.5rem;
+}
+.LoginPanel button {
+    width: 15rem;
+    margin: 1rem 5rem;
+    background-color: var(--active-primary);
+    border-radius: 1rem;
+    transition: background-color .25s ease;
+    border: none;
+}
+.LoginPanel button:hover {
+    background-color: var(--active-primary-hover);
+}
