@@ -5,6 +5,7 @@ import Home from "./pages/Home.tsx";
 import Upload from "./pages/Upload.tsx";
 import Login from "./pages/Login.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import MyBox from "./pages/MyBox.tsx";
 
 // It's October 29th, 2025, and I'm GOING to learn React.
 // I've tried in the past, and I've always given up.
@@ -19,6 +20,7 @@ function App() {
                   <Route element={<RootLayout />}>
                       <Route index element={<Home />} />
                       <Route path={"upload"} element={<Upload />} />
+                      <Route path={"box"} element={<MyBox />} />
                       <Route path={"login"} element={<Login />} />
                       <Route path={"settings"} element={<Login />} />
 

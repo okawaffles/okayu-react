@@ -1,0 +1,28 @@
+.BoxItem {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--active-mybox-item);
+    border-radius: 1rem;
+    border: 2px solid var(--active-primary);
+    margin: .25rem;
+}
+.BoxItem .left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.BoxItem .left .size {
+    margin: .25rem .75rem;
+    background-color: var(--active-primary);
+    padding: .25rem 1rem;
+    border-radius: .5rem;
+}
+.BoxItem .left .name {
+    font-size: large;
+    margin: .75rem 0;
+}
+.BoxItem .right {
+    margin: .25rem 1rem;
+}
