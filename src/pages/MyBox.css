@@ -2,4 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    justify-self: center;
+    overflow: scroll;
+    height: 70vh;
+    background-color: #10191f66;
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 50%;
+    /* fade top & bottom */
+    mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
 }

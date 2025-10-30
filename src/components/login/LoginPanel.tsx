@@ -1,5 +1,6 @@
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
+import {BACKEND_DOMAIN} from "../../main.tsx";
 
 export default function LoginPanel() {
     const [usernameValue, setUsernameValue] = useState('');
@@ -13,7 +14,7 @@ export default function LoginPanel() {
         if (!allow_attempting) return;
         allow_attempting = false;
 
-        const loginResult = await fetch('https://okayucdn.com/api/login', {
+        const loginResult = await fetch(`${BACKEND_DOMAIN}/api/login`, {
             method: 'POST',
             body: new URLSearchParams({
                 username: usernameValue,
@@ -32,6 +33,7 @@ export default function LoginPanel() {
 
         const token = json.token;
         document.cookie = `token=${token}`;
+        localStorage.setItem('auth', token);
         alert(`got token ${token}!`);
         navigate('/box', {replace: true});
     }

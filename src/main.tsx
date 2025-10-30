@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 
+export const BACKEND_DOMAIN = 'https://okayucdn.com';
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
